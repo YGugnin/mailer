@@ -7,6 +7,7 @@ Yii 2 Simple mailer
 * of corse better way use cronjob for sending mails
 * some controllers can be "better" (ranges for dates, count users, etc), but this is just simple test
 * It takes about 8 hours
+* For sending email just create mail (Send / List mails > Create Mail)
 
 REQUIREMENTS
 ------------
