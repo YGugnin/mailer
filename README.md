@@ -1,7 +1,7 @@
 Yii 2 Simple mailer
 ============================
 
-[Online version](http://ygugnin.com/)
+[Online version](http://ygugnin.com/) (will be soon)
 
 * one points was changed (I used many-to-many relation, so user can use multiple lists)
 * of corse better way use cronjob for sending mails
