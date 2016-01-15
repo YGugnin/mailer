@@ -125,7 +125,9 @@ class MailsController extends Controller
     }
 
     private function sendMail($to , $subject , $message){
-        return (int)mail($to , $subject , $message);
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+    	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+        return (int)mail($to , $subject , $message, $headers);
     }
 
     private function saveResult($mail_id, $user_id, $result){
