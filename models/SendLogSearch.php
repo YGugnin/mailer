@@ -41,6 +41,10 @@ class SendLogSearch extends SendLog
      */
     public function search($params)
     {
+        if(isset($params['mail_id'])){
+	        $this->mail_id = $params['mail_id'];
+	    }
+
         $query = SendLog::find();
 
         $dataProvider = new ActiveDataProvider([
