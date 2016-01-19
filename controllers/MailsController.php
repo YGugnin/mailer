@@ -101,7 +101,7 @@ class MailsController extends Controller
 
     private function send($model){
         $list_id = $model->list_id;
-        $records = UserLists::find()->joinwith('user')->where(['=','list_id', $list_id])->where(['=','blocked',0])->asArray()->all();
+        $records = UserLists::find()->joinwith('user')->where(['=','list_id', $list_id])->andWhere(['=','blocked',0])->asArray()->all();
 
         $content = $this->renderPartial('layout', ['content' => $model->body]);
 
